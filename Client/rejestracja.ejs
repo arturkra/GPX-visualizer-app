@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <script src = "rejestracja"></script>
+</head>
+<body>
+    <h1>Zarejestruj się do aplikacji</h1>
+    <form action="/rejestracja" method="POST">
+        <div>
+            <label for="login">Nazwa użytkownika:</label>
+            <input type="text" id = "login" name="login" required/>
+        </div>
+        <div>
+            <label for = "password">Hasło:</label>
+            <input type="password" id = "password" name="password" required/>
+        </div>
+        <button type="submit">Zatwierdź</button>
+    </form>
+    <a href = "http://localhost:3000">Mam już konto</a>
+    <!-- <h1>Zarejestruj się do aplikacji</h1>
+    <label for="login">Nazwa użytkoknika:</label>
+    <input type="text" id = "login"/>
+    <label for = "haslo">Hasło:</label>
+    <input type="text" id = "haslo"/>
+    <button onclick="" id = "zatwierdz">Zatwierdź</button>
+    <br>
+    <p><a href = "http://localhost:3000">Mam już konto</a></p> -->
+</body>
+</html>

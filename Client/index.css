@@ -1,0 +1,87 @@
+html{
+    color: rgb(100, 100, 100);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+/* header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(./zasoby/RysyWieczór.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 35%;
+    color: rgb(100, 100, 100);
+    padding: 10px;
+} */
+.naglowek{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(./zasoby/RysyWieczór.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 25%;
+    color: rgb(100, 100, 100);
+    flex: 1 1 20%;
+    
+}
+
+
+#mapid { 
+    height: 90vh;
+    width: 75%;
+    flex: 1 1 80%;
+
+}
+
+.author{
+    background-color: rgb(190, 190, 190);
+    height: 10vh;
+}
+.calosc-strony{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.grid-container{
+    display: grid;
+    place-items: right;
+    grid-gap: 15px;
+}
+.grid-item{
+    display: flexbox;
+}
+
+.file-input{
+    text-align: center;
+    margin: auto;
+    content: "Wybierz plik";
+    font-size:  18px;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    color: rgb(216, 216, 216);
+    background-color: rgb(47, 122, 192);
+    border-radius: 30px;
+    border: 0px ;
+    outline: none;
+    overflow: hidden;
+    
+    
+}
+
+.file-input::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.btn {
+    background-color: rgb(47, 122, 192);
+    border-radius: 30px;
+    border: 5px; 
+    border-color:rgb(47, 122, 192);
+    color: rgb(216, 216, 216);
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.pole-tekstowe {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja GPS</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="leaflet-heat.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <div class="calosc-strony">
+    <!-- <header> -->
+        <div class="naglowek">
+            <div class="grid-container">
+                
+                <div class="grid-item"><button class="btn" onclick="wylogujUzytkownika()">Wyloguj</button></div>
+                
+            
+                
+                <div class="grid-item">
+                    Wybór trasy zapisane na urządzeniu:<p>
+                    Wpisz nazwę pod jaką chcesz zapisać trasę:
+                    <input type="text" class="pole-tekstowe" id="nazwaSciezki"/>  </p>
+                    <input type="file" class="file-input" accept=".gpx"/>
+                </div>
+                
+                <div class="grid-item"><button class="btn" onclick="zatwierdzenieWybraniaPliku()">Zatwierdź</button> </div>
+                
+                <div class="grid-item">
+                    Wybór trasy przesłanej wcześniej do bazy danych: <p>
+                    <input type="text" class="pole-tekstowe" id="nazwaSzukanegoPliku"><br>
+                    <button class="btn" onclick="pobierzDaneZSerwera()">Pobierz Trasę</button>
+                </div>
+                <div class="grid-item"><button class="btn" onclick="naniesHeatmape()">Pokaż heatmapę wszystkich tras</button>
+                    <button class="btn" onclick="naniesMojaHeatmape()">Pokaż heatmapę tylko moich tras</button> 
+                    <button class="btn" onclick="wyczyscMape()">Wyczyść mapę</button>
+                </div>
+                    
+                
+                <!-- <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div> -->
+                
+                
+                
+            
+            
+            
+                
+                
+            
+            
+                
+            </div>
+        </div>
+    <!-- </header> -->
+    <div id="mapid">
+
+    </div>
+</div>
+    <div class="author">
+        <img src=""
+        Artur Krasowski
+    </div>
+</body>
+<script src="klient.js">
+    /* var polylinePoints = [
+    [37.781814, -122.404740],
+    [37.781719, -122.404637],
+    [37.781489, -122.404949],
+    [37.780704, -122.403945],
+    [37.780012, -122.404827]
+  ];          */   
+  
+  //var polyline = L.polyline(polylinePoints).addTo(map);</script>
+</html>
