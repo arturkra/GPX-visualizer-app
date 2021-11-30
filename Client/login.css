@@ -1,0 +1,68 @@
+html{
+    color: rgb(125, 125, 125);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+.grid-container{
+    display: grid;
+    place-items: center;
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+
+}
+.grid-item{
+    display: grid;
+    align-items: center;
+    align-content: center;    
+    width: auto;
+    
+}
+
+button{
+    background-color: rgb(47, 122, 192);
+    border-radius: 30px;
+    border: 5px; 
+    border-color:rgb(47, 122, 192);
+    color: rgb(216, 216, 216);
+    font-size: 18px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+input{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 15px;
+}
+
+a:link{
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    background-color:rgb(47, 122, 192) ;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 5px;
+    padding: 7px;
+    margin: 7px;
+    border-color:rgb(47, 122, 192);
+}
+
+a:visited{
+    color: rgb(216, 216, 216);
+}
+
+.przycisk-rejestracji{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.form{
+    align-content: center;
+}
+.tlo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(./zasoby/RysyWieczór.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

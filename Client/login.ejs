@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logowanie</title>
+    <link href="./login.css" rel="stylesheet" type="text/css">
     <script src="login.js"></script>
 </head>
 <body>
-    <h1>Zaloguj się do aplikacji</h1>
+    <div class="tlo">
+    <div class = 'grid-container'>
+        <h1>Zaloguj się do aplikacji</h1>
     <form action="/" method="POST">
         <div>
-            <label for="login">Nazwa użytkownika:</label>
-            <input type="text" id = "login" name="login" required/>
+            <div class="grid-item">
+                <label for="login">Nazwa użytkownika:</label>
+                <input type="text" id = "login" name="login" required/>
+            </div>
         </div>
         <div>
-            <label for = "password">Hasło:</label>
-            <input type="password" id = "password" name="password" required/>
+            <div class="grid-item"></div>
+                <label for = "password">Hasło:</label>
+                <input type="password" id = "password" name="password" required/>
+            </div>
+        
+        <div class="grid-item">
+            <button type="submit">Zaloguj się</button>
         </div>
-        <button type="submit">Zaloguj się</button>
     </form> 
-    <a href = "http://localhost:3000/rejestracja">Zarejestruj się</a>
+    <div class="grid-item"></div>
+    <div type="przycisk-rejestracji">
+        <a href = "http://localhost:3000/rejestracja">Zarejestruj się</a>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+   
   
 
 <!--     <h1>Zaloguj się do aplikacji</h1>

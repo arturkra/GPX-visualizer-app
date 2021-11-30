@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejestracja</title>
+    <link href="./rejestracja.css" type="text/css" rel="stylesheet">
     <script src = "rejestracja"></script>
 </head>
 <body>
-    <h1>Zarejestruj się do aplikacji</h1>
-    <form action="/rejestracja" method="POST">
-        <div>
-            <label for="login">Nazwa użytkownika:</label>
-            <input type="text" id = "login" name="login" required/>
+    <div class="tlo">
+        <div class = 'grid-container'>
+            <h1>Zarejestruj się do aplikacji</h1>
+        <form action="/" method="POST">
+            <div>
+                <div class="grid-item">
+                    <label for="login">Nazwa użytkownika:</label>
+                    <input type="text" id = "login" name="login" required/>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item"></div>
+                    <label for = "password">Hasło:</label>
+                    <input type="password" id = "password" name="password" required/>
+                </div>
+            
+            <div class="grid-item">
+                <button type="submit">Zatwierdź</button>
+            </div>
+        </form> 
+        <div class="grid-item"></div>
+        <div type="przycisk-rejestracji">
+            <a href = "http://localhost:3000">Mam już konto</a>
         </div>
-        <div>
-            <label for = "password">Hasło:</label>
-            <input type="password" id = "password" name="password" required/>
         </div>
-        <button type="submit">Zatwierdź</button>
-    </form>
+        </div>
+        </div>
+    </div>
+    <!-- <div type="container">
+        <h1>Zarejestruj się do aplikacji</h1>
+        <form action="/rejestracja" method="POST">
+            <div type='grid-item'>
+                <label for="login">Nazwa użytkownika:</label>
+                <input type="text" id = "login" name="login" required/>
+            </div>
+            <div type='grid-item'>
+                <label for = "password">Hasło:</label>
+                <input type="password" id = "password" name="password" required/>
+            </div type='grid-item'>
+            <button type="submit">Zatwierdź</button>
+        </form>
     <a href = "http://localhost:3000">Mam już konto</a>
+    </div> -->
+    
     <!-- <h1>Zarejestruj się do aplikacji</h1>
     <label for="login">Nazwa użytkoknika:</label>
     <input type="text" id = "login"/>
